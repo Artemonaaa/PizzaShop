@@ -1,4 +1,3 @@
-// import components
 import Pizza from './components/Pizza';
 import Banner from './components/Banner';
 
