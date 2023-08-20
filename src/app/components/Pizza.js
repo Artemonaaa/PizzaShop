@@ -73,8 +73,8 @@ const Pizza = ({ pizza }) => {
            className="absolute z-30 right-2 top-2 hover:scale-110 duration-200 cursor-pointer"
           >
             <IoCloseOutline className="text-4xl text-orange" />
-            <PizzaDetails pizza={pizza} modal={modal} setModal={setModal} />
           </div>
+          <PizzaDetails pizza={pizza} modal={modal} setModal={setModal} />
         </Modal>
       )}
     </div>
