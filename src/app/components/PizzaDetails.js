@@ -48,7 +48,7 @@ const PizzaDetails = ({ pizza, modal, setModal }) => {
           />
         </div>
       </div>
-      <div className="bg-blue-400 flex flex-col flex-1">
+      <div className="flex flex-col flex-1">
         <div className="flex-1 p-2 text-center lg:text-left">
           <div className="flex-1 bg-white overflow-y-scroll h-[46vh] scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-white pr-2">
             <div className="font-semibold">
@@ -67,7 +67,7 @@ const PizzaDetails = ({ pizza, modal, setModal }) => {
               </div>
             </div>
             <SizeSelection pizza={pizza} size={size} setSize={setSize} />
-            <CrustSelection />
+            <CrustSelection crust={crust} setCrust={setCrust} />
             <div>Choose topping</div>
             <div>
               {pizza.toppings?.map((topping, index) => {
