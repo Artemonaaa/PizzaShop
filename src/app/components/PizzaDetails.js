@@ -66,7 +66,7 @@ const PizzaDetails = ({ pizza, modal, setModal }) => {
                 <span>, {crust} crust</span>
               </div>
             </div>
-            <SizeSelection />
+            <SizeSelection pizza={pizza} size={size} setSize={setSize} />
             <CrustSelection />
             <div>Choose topping</div>
             <div>
