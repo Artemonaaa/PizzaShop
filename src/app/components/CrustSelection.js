@@ -1,3 +1,5 @@
+import React from 'react'
+
 const CrustSelection = ({ crust, setCrust }) => {
   return (
     <div className="flex justify-center items-center lg:justify-start">
@@ -33,4 +35,4 @@ const CrustSelection = ({ crust, setCrust }) => {
   )
 };
 
-export default CrustSelection;
+export default React.memo(CrustSelection)

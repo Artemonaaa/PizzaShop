@@ -1,3 +1,5 @@
+import React from 'react'
+
 import Image from 'next/image'
 
 const SizeSelection = ({ pizza, size, setSize }) => {
@@ -75,5 +77,5 @@ const SizeSelection = ({ pizza, size, setSize }) => {
   )
 }
 
-export default SizeSelection;
+export default React.memo(SizeSelection)
  
