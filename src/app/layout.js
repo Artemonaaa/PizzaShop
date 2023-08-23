@@ -1,4 +1,5 @@
 import Nav from './components/Nav';
+import CartMobile from './components/CartMobile';
 
 import './globals.css';
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         className={`${quicksand.variable} ${bangers.variable} ${robotoCondensed.variable} font-quicksand`}
       >
         <Nav />
+        <CartMobile />
         {children}
       </body>
     </html>
