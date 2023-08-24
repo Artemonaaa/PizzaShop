@@ -1,5 +1,6 @@
 import Nav from './components/Nav';
 import CartMobile from './components/CartMobile';
+import CartProvider from './context/CartContext';
 
 import './globals.css';
 
@@ -24,14 +25,16 @@ const robotoCondensed = Roboto_Condensed({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
-      <body 
-        className={`${quicksand.variable} ${bangers.variable} ${robotoCondensed.variable} font-quicksand`}
-      >
-        <Nav />
-        <CartMobile />
-        {children}
-      </body>
-    </html>
+    <CartProvider>
+      <html lang='en'>
+        <body 
+          className={`${quicksand.variable} ${bangers.variable} ${robotoCondensed.variable} font-quicksand`}
+        >
+          <Nav />
+          <CartMobile />
+          {children}
+        </body>
+      </html>
+    </CartProvider>
   );
 }
