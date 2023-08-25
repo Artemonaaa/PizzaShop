@@ -7,6 +7,7 @@ import { IoCloseOutline } from 'react-icons/io5'
 
 const CartTop = () => {
   const { setIsOpen } = useContext(CartContext)
+  
   return (
     <div className="w-full h-20 border-b flex items-center justify-between px-10">
       <div className="font-semibold">Shopping Bag(3)</div>
