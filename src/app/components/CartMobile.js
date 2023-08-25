@@ -1,24 +1,18 @@
 'use client'
 
-import { useContext } from 'react';
-import { BsHandbagFill } from 'react-icons/bs'
+import { useContext } from 'react'
 
-import { CartContext } from '../context/CartContext';
+import CartTop from './CartTop'
+import { CartContext } from '../context/CartContext'
+
 
 const CartMobile = () => {
-  const { isOpen, setIsOpen } = useContext(CartContext)
+  const { isOpen } = useContext(CartContext)
   return (
-    <div
-      onClick={() => setIsOpen(!isOpen)} 
-      className="bg-tertiary w-[72px] h-[72px] rounded-full flex justify-center
-      items-center text-white cursor-pointer fixed right-[10%] bottom-[5%] z-20"
+    <div className={`${isOpen ? "bottom-0" : "-bottom-full"} bg-white fixed 
+      w-full h-full left-0 z-20 transition-all duration-300 lg:hidden flex flex-col`}
     >
-      <BsHandbagFill className="text-4xl" />
-      <span className="absolute text-white bottom-3 right-4 gradient w-5 h-5
-        flex justify-center items-center rounded-full font-robotoCondensed text-[13px]"
-      >
-        3
-      </span>
+      <CartTop />
     </div>
   )
 }
