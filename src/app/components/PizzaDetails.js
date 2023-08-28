@@ -57,7 +57,7 @@ const PizzaDetails = ({ pizza, modal, setModal }) => {
       </div>
       <div className="flex flex-col flex-1">
         <div className="flex-1 p-2 text-center lg:text-left">
-          <div className="flex-1 bg-white overflow-y-scroll h-[46vh] scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-white pr-2">
+          <div className="flex-1 bg-white overflow-y-scroll max-h-[475px] scrollbar-thin scrollbar-thumb-gray-200 scrollbar-track-white pr-2">
             <div className="font-semibold">
               <h2 className="capitalize text-3xl mb-1">{pizza.name}</h2>
               <div className="mb-6 text-lg font-medium">

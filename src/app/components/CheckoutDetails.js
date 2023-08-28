@@ -35,7 +35,7 @@ const CheckoutDetails = ({ setModal }) => {
   }, [successMsg])
 
   return (
-    <div>
+    <div className="h-full">
       {successMsg ? (
         <div className="flex flex-col justify-center items-center h-[100vh]
           lg:h-[600px] px-6"
@@ -43,9 +43,9 @@ const CheckoutDetails = ({ setModal }) => {
           <h2 className="text-2xl font-semibold text-center">
             Thank you! The order has been placed!
           </h2>
-          <Image src={"/success-1.gif"} width={150} height={150} />
+          <Image src={"/success-1.gif"} width={150} height={150} alt="" />
           <div>
-            This window will closed in <span>{count}</span> seconds
+            This window will close in <span>{count}</span> seconds
           </div>
         </div>
       ) : (
@@ -55,7 +55,7 @@ const CheckoutDetails = ({ setModal }) => {
         >
           Shippinig & Checkout
         </h2>
-        <div className="h-[86vh] lg:h-[47.5] flex flex-col lg:flex-row lg:gap-x-4">
+        <div className="max-h-[800px] h-full lg:h-[47.5] flex flex-col lg:flex-row lg:gap-x-4">
           <div className="flex-1 h-full overflow-y-auto lg:overflow-visible py-4 px-8
             lg:py-8 lg:px-0"
           >
